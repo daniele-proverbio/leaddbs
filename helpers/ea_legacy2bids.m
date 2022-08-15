@@ -41,6 +41,9 @@ end
 if isdicom && ~exist('dicom_source','var')
     warndlg("You have specified that you want dicom import, but have not specified a dicom source file. Please specific your dicom source directory!")
 end
+if isempty(dicom_source) % (one of the) selected patients does not have a DICOM subfolder, skip importing dicoms.
+    isdicom=0;
+end
 
 %define names of the new directorey structure
 
