@@ -60,7 +60,6 @@ end
 
 set(handles.writeout2d_checkbox,'Value',options.d2.write);
 set(handles.render_checkbox,'Value',options.d3.write);
-set(handles.exportservercheck,'Value',options.d3.autoserver);
 
 if isfield(options, 'manualheightcorrection')
     set(handles.manualheight_checkbox,'Value',options.manualheightcorrection);
